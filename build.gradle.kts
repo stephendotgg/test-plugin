@@ -8,7 +8,7 @@ plugins {
     id("xyz.jpenilla.run-paper") version "2.1.0"
 }
 
-group = "com.example"
+group = "gg.stephen"
 version = "1.0"
 
 repositories {
