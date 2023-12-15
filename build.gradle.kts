@@ -21,6 +21,10 @@ dependencies {
 }
 
 tasks {
+    shadowJar {
+        archiveFileName.set("test-plugin.jar")
+    }
+
     build {
         dependsOn(shadowJar)
     }
