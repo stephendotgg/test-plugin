@@ -14,17 +14,15 @@ version = "1.0"
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
+    compileOnly("com.github.koca2000:NoteBlockAPI:1.6.2")
 }
 
 tasks {
-    shadowJar {
-        archiveFileName.set("test-plugin.jar")
-    }
-
     build {
         dependsOn(shadowJar)
     }
